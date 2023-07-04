@@ -1,0 +1,42 @@
+/* BACKGROUND COLORS */
+.bg_body_blue {
+    background-color: rgb(24, 58, 74);
+}
+
+
+.bg_otherNumbers {
+    background-color: rgb(61, 136, 174);
+}
+
+.bg_multiple3 {
+    background-color: rgb(97, 210, 164);
+}
+
+.bg_multiple5 {
+    background-color: rgb(249, 210, 119);
+}
+
+/* QUADRATI */
+
+.square {
+    margin:10px;
+    height: 100px;
+    width: 100px;
+    
+}
+
+
+/* ALLINEAMENTO */
+
+.vertical-align-square {
+    line-height: 100px;
+    vertical-align: middle;
+}
+
+/* FLEX */
+
+.container-square-flex {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+}
