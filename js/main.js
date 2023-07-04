@@ -51,21 +51,32 @@ for (let i = 1; i <= 100; i++) {
 
 for (j = 1; j <= 100; j++) {
 
+    // se i numeri sono sia multipli di 3 che multpli di 5 stampa "FizzBuzz" e il colore dei quadrati sarà di una tonalità di rosso
+
     if (j % 3 == 0 && j % 5 == 0) {
         document.getElementById("squareContainer").innerHTML += `
-      <div class="square">
-                <p class="text-center bg-danger text-light fs-5 fw-3 vertical-align-square">FrizzBuzz</p>
+      <div class="square bg_frizzBuzz">
+                <p class="text-center text-light fs-5 fw-3 vertical-align-square">FrizzBuzz</p>
             </div>`
+
+        //se i numeri sono solo multipli di 3, stampa "Fizz" e il colore dei quadrati sarà di una tonalità di verde
+        
     } else if (j % 3 == 0) {
         document.getElementById("squareContainer").innerHTML += `
       <div class="square bg_multiple3">
                 <p class="text-center text-light fs-5 fw-3 vertical-align-square">Frizz</p>
             </div>`
+
+        // se i numeri sono solo multipli di 5, stampa "Buzz" e il colore dei quadrati sarà di una tonalità di beige
+
     } else if (j % 5 == 0) {
         document.getElementById("squareContainer").innerHTML += `
       <div class="square bg_multiple5">
                 <p class="text-center text-light fs-5 fw-3 vertical-align-square">Buzz</p>
             </div>`
+
+        // se i numeri non sono multipli di 3, e nemmeno di 5, stampa j, e il colore dei quadrati sarà di una tonalità di blu
+
     } else {
         document.getElementById("squareContainer").innerHTML += `
       <div class="square bg_otherNumbers">
